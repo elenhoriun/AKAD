@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Boostrap Test</title>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,11 +17,28 @@
 				<a href="#" class="ak-logo">AKAD.</a>
 			</div>
 			<div class="col text-right">
-				<a href="#" class="ak-header__menu">
-					<img src="img/icon-menu.png" alt="Menu">
+				<a href="#" class="ak-header__menu dd-nav-icon" id="mobile-menu-link">
+				<!-- <img src="img/icon-menu.png" alt="Menu"> -->
+				<!-- <div class="dd-nav-icon"> -->
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				<!-- </div> -->
 				</a>
 			</div>
 		</div>
+		
+		<nav class="ak-menu" id="mobile-menu">
+			<ul class="ak-menu__items">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</nav>
 		<div class="row">
 			<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center ak-header__main">
 				<div class="ak-header__title">
@@ -54,7 +75,7 @@
 			<div class="col col-lg-6">
 				<div class="row">
 					<div class="col-12 col-sm-6 ak-why__item">
-						<h3 class="ak-why__title">UNLIMITED OPTIONS</h3>
+						<h3 class="ak-why__title"><span class="ion-icon ion-ios-infinite-outline"></span>UNLIMITED OPTIONS</h3>
 						<ul class="ak-why__list">
 							<li>Branding</li>
 							<li>Design & Copywriting</li>
@@ -63,7 +84,7 @@
 						</ul>
 					</div>
 					<div class="col-12 col-sm-6 ak-why__item">
-						<h3 class="ak-why__title">Design & Development</h3>
+						<h3 class="ak-why__title"><span class="ion-icon ion-ios-shuffle"></span>Design & Development</h3>
 						<ul class="ak-why__list">
 							<li>Information Architecture</li>
 							<li>Interface design</li>
@@ -72,7 +93,7 @@
 						</ul>
 					</div>
 					<div class="col-12 col-sm-6 ak-why__item">
-						<h3 class="ak-why__title"> E-COMMERCE</h3>
+						<h3 class="ak-why__title"><span class="ion-icon ion-ios-cart-outline"></span>E-COMMERCE</h3>
 						<ul class="ak-why__list">
 							<li>Phototyping</li>
 							<li>Technical consulting</li>
@@ -81,7 +102,7 @@
 						</ul>
 					</div>
 					<div class="col-12 col-sm-6 ak-why__item">
-						<h3 class="ak-why__title">CUSTOMIZABLE DESIGN</h3>
+						<h3 class="ak-why__title"><span class="ion-icon ion-ios-settings"></span>CUSTOMIZABLE DESIGN</h3>
 						<ul class="ak-why__list">
 							<li>Information Architecture</li>
 							<li>Interface design</li>
@@ -91,15 +112,286 @@
 					</div>
 				</div>
 			</div>
-			<div class="col d-none d-lg-block col-lg-5 offset-lg-1"></div>
+			<div class="col d-none d-lg-block col-lg-5 offset-lg-1">
+				<img src="img/img-about.jpg" alt="Why choose us">
+			</div>
 		</div>
 	</div>
+</section>
+<section class="ak-portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col col-md-8 offset-md-2 text-center ak-title-wrapper">
+				<h2 class="ak-title">Our portfolio</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque commodi magni a asperiores magnam voluptas alias laboriosam ea soluta placeat.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<h3>Choose category</h3>
+				<ul class="ak-portfolio__filter">
+					<li><a class="active" href="#" data-filter="*">All</a></li>
+					<li><a href="#" data-filter=".filter1">Webdesign</a></li>
+					<li><a href="#" data-filter=".filter2">Graphic design</a></li>
+					<li><a href="#" data-filter=".filter3">Fashion</a></li>
+					<li><a href="#" data-filter=".filter4">Logo design</a></li>
+					<li><a href="#" data-filter=".filter5">Advertising</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-9">
+				<div class="row ak-portfolio__items">
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__sizer"></div>
 
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter1"><a href="#"><img src="img/portfolio_photos/portfolio-01.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter2"><a href="#"><img src="img/portfolio_photos/portfolio-02.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter3"><a href="#"><img src="img/portfolio_photos/portfolio-03.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter4"><a href="#"><img src="img/portfolio_photos/portfolio-04.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter5"><a href="#"><img src="img/portfolio_photos/portfolio-05.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter2"><a href="#"><img src="img/portfolio_photos/portfolio-06.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter1"><a href="#"><img src="img/portfolio_photos/portfolio-07.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter4"><a href="#"><img src="img/portfolio_photos/portfolio-08.jpg" alt=""></a></div>
+					<div class="col-12 col-md-6 col-lg-4 ak-portfolio__item filter3"><a href="#"><img src="img/portfolio_photos/portfolio-09.jpg" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 
 
 
+
+
+
+<footer class="ak-footer">
+
+
+
+	<section class="ak-footer__top">
+
+
+
+		<div class="container">
+
+
+
+			<div class="row">
+
+
+
+				<div class="col-12 col-md-6">
+
+
+
+					<h3 class="ak-footer__top-title">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
+
+
+
+					<a href="#" class="ak-button ak-button--white">Get in touch</a>
+
+
+
+				</div>
+
+
+
+				<div class="col-12 col-md-6 ak-footer__form">
+
+
+
+					
+
+
+
+						<h3 class="ak-footer__form-title">Stay informed with our newsletter</h3>
+
+
+
+						<p class="ak-footer__form-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, inventore?</p>
+
+
+
+						<form action="/" class="ak-footer__form-container">
+
+
+
+							<input type="email" placeholder="Your email" required="required">
+
+
+
+							<input type="submit" value="Send">
+
+
+
+						</form>
+
+
+
+					
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+	</section>
+
+
+
+	<div class="ak-footer__bottom">
+
+
+
+		<div class="container">
+
+
+
+			<div class="row">
+
+
+
+				<div class="col-12 col-lg-8 ak-footer__menu">
+
+
+
+					<nav>
+
+
+
+						<ul>
+
+
+
+							<li><a href="#">Home</a></li>
+
+
+
+							<li><a href="#">About us</a></li>
+
+
+
+							<li><a href="#">Services</a></li>
+
+
+
+							<li><a href="#">Portfolio</a></li>
+
+
+
+							<li><a href="#">Blog</a></li>
+
+
+
+							<li><a href="#">Contact us</a></li>
+
+
+
+						</ul>
+
+
+
+					</nav>
+
+
+
+				</div>
+
+
+
+				<div class="col-12 col-lg-4 text-right">
+
+
+
+					<p>Created by akhouad 2016. All Rights Reserved</p>
+
+
+
+					<ul class="ak-social">
+
+
+
+					<li><a href="#" class="ion-social-facebook"></a></li>
+
+
+
+					<li><a href="#" class="ion-social-twitter"></a></li>
+
+
+
+					<li><a href="#" class="ion-social-youtube"></a></li>
+
+
+
+					<li><a href="#" class="ion-social-linkedin"></a></li>
+
+
+
+					<li><a href="#" class="ion-social-pinterest"></a></li>
+
+
+
+					<li><a href="#" class="ion-social-instagram"></a></li>
+
+
+
+					
+
+
+
+				</ul>
+
+
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+		
+
+
+
+	</div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDirfFo6BjMidL7W4w_W90TDkCNEgRzAr8" async defer></script>
+
+
+
+	
 
 
 

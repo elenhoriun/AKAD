@@ -1,0 +1,21 @@
+// Bootstrap tabs
+
+.nav-tabs {
+	border: none;
+
+	.nav-link {
+		border: none;
+		border-bottom: 2px solid $color_light;
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 5px;
+		color: $color-light;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+
+		&.active {
+			border-bottom: 2px solid $color_green;
+			color: $color_main;
+		}
+	}
+}

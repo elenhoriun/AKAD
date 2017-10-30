@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boostrap Test</title>
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="ak-header--page">
+	<div class="container">
+		<div class="row align-items-center ak-header__top">
+			<div class="col">
+				<a href="#" class="ak-logo">AKAD.</a>
+			</div>
+			<div class="col text-right">
+				<a href="#" class="ak-header__menu dd-nav-icon" id="mobile-menu-link">
+				<!-- <img src="img/icon-menu.png" alt="Menu"> -->
+				<!-- <div class="dd-nav-icon"> -->
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				<!-- </div> -->
+				</a>
+			</div>
+		</div>
+		
+		<nav class="ak-menu" id="mobile-menu">
+			<ul class="ak-menu__items">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</nav>
+		<div class="row align-items-center ak-header__middle">
+			<div class="col text-center">
+				<h1>Blog posts</h1>
+				<ul class="ak-breadcrumbs">
+					<li><a href="#">Home</a></li>
+					<li>Blog</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<article class="ak-blog ak-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-3 offset-md-9">
+				<div class="ak-blog__search">
+					<form action="/">
+						<input type="text" placeholder="Search...">
+						<button class="ion-search"><span>Seacrh</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-8">
+				<section class="ak-post">
+
+					<a href="#" class="ak-post__thumb">
+						<img src="img/blog-post.jpg" alt="Blog photo">
+					</a>
+					<div class="ak-post__info">
+						<span class="ak-description">October 13, 2015</span>
+						<span class="ak-post__comments">
+							<span class="ion-chatbox-working"></span> 8
+						</span>
+						<span class="ak-post__likes">
+							<span class="ak-post__likes-icon ion-heart"></span> 15
+						</span>
+					</div>
+					<h3 class="ak-post__title">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h3>
+					<div class="ak-post__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vitae sapiente culpa, aspernatur veniam voluptatibus repellendus aliquid, nulla, natus tenetur laboriosam id. Animi, dolores, eveniet.</p>
+					</div>
+					<a href="#" class="ak-post__continue ak-subtitle">Continue reading <span class="ion-arrow-right-c"></span></a>
+
+					<a href="#" class="ak-post__thumb">
+						<img src="img/blog-post.jpg" alt="Blog photo">
+					</a>
+					<div class="ak-post__info">
+						<span class="ak-description">October 13, 2015</span>
+						<span class="ak-post__comments">
+							<span class="ion-chatbox-working"></span> 8
+						</span>
+						<span class="ak-post__likes">
+							<span class="ak-post__likes-icon ion-heart"></span> 15
+						</span>
+					</div>
+
+					<h3 class="ak-post__title">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h3>
+					<div class="ak-post__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vitae sapiente culpa, aspernatur veniam voluptatibus repellendus aliquid, nulla, natus tenetur laboriosam id. Animi, dolores, eveniet.</p>
+					</div>
+					<a href="#" class="ak-post__continue ak-subtitle">Continue reading <span class="ion-arrow-right-c"></span></a>
+					<a href="#" class="ak-post__thumb">
+						<img src="img/blog-post.jpg" alt="Blog photo">
+					</a>
+					<div class="ak-post__info">
+						<span class="ak-description">October 13, 2015</span>
+						<span class="ak-post__comments">
+							<span class="ion-chatbox-working"></span> 8
+						</span>
+						<span class="ak-post__likes">
+							<span class="ak-post__likes-icon ion-heart"></span> 15
+						</span>
+					</div>
+					<h3 class="ak-post__title">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h3>
+					<div class="ak-post__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vitae sapiente culpa, aspernatur veniam voluptatibus repellendus aliquid, nulla, natus tenetur laboriosam id. Animi, dolores, eveniet.</p>
+					</div>
+					<a href="#" class="ak-post__continue ak-subtitle">Continue reading <span class="ion-arrow-right-c"></span></a>
+				</section>
+			</div>
+			<div class="col-12 col-md-3 offset-md-1">
+				<div class="ak-blog__tabs">
+					<h3 class="ak-subtitle">Posts</h3>
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true">Latest</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">Popular</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comment" role="tab" aria-controls="comment" aria-selected="false">Comments</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+					  <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+					  	<div class="ak-blog-sp">
+					  		<img class="ak-blog-sp__img" src="img/blog-post-item.jpg" alt="">
+					  		<span class="ak-blog-sp__info">
+					  			<span class="ak-blog-sp__title">Lorem ipsum dolor</span> <br>
+					  			<span class="ak-blog-sp__date">3th oct 2012</span>
+					  		</span>
+					  		<img class="ak-blog-sp__img" src="img/blog-post-item2.jpg" alt="">
+					  		<span class="ak-blog-sp__info">
+					  			<span class="ak-blog-sp__title">Lorem ipsum dolor</span> <br>
+					  			<span class="ak-blog-sp__date">3th oct 2012</span>
+					  		</span>
+					  		<img class="ak-blog-sp__img" src="img/blog-post-item3.jpg" alt="">
+					  		<span class="ak-blog-sp__info">
+					  			<span class="ak-blog-sp__title">Lorem ipsum dolor</span> <br>
+					  			<span class="ak-blog-sp__date">3th oct 2012</span>
+					  		</span>
+					  	</div>
+					  </div>
+					  <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">...</div>
+					  <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">...</div>
+					</div>
+				</div>
+				<div class="ak-blog__table ak-blog__category">
+					<h3 class="ak-subtitle">Categories</h3>
+					<table>
+						<tr>
+							<td><a href="#">Business</a></td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td><a href="#">Photography</a></td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td><a href="#">Journal</a></td>
+							<td>22</td>
+						</tr>
+						<tr>
+							<td><a href="#">Web Development</a></td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+				<div class="ak-blog__tags">
+					<h3 class="ak-subtitle">Tags</h3>
+					<ul class="ak-blog__tags-list">
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">Javascript</a></li>
+						<li><a href="#">JQuery</a></li>
+						<li><a href="#">HTML5</a></li>
+						<li><a href="#">Bootstrap</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">Javascript</a></li>
+						<li><a href="#">JQuery</a></li>
+					</ul>
+				</div>
+
+				<div class="ak-blog__table ak-blog__archive">
+					<h3 class="ak-subtitle">Archives</h3>
+					<table>
+						<tr>
+							<td><a href="#">Business</a></td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td><a href="#">Photography</a></td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td><a href="#">Journal</a></td>
+							<td>22</td>
+						</tr>
+						<tr>
+							<td><a href="#">Web Development</a></td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</article>
+
+
+
+
+
+<footer class="ak-footer">
+
+
+	<section class="ak-footer__top">
+
+
+		<div class="container">
+
+
+			<div class="row">
+
+
+				<div class="col-12 col-md-6">
+
+
+					<h3 class="ak-footer__top-title">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
+
+
+					<a href="#" class="ak-button ak-button--white">Get in touch</a>
+
+
+				</div>
+
+
+				<div class="col-12 col-md-6 ak-footer__form">
+
+
+					
+
+
+						<h3 class="ak-footer__form-title">Stay informed with our newsletter</h3>
+
+
+						<p class="ak-footer__form-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, inventore?</p>
+
+
+						<form action="/" class="ak-footer__form-container">
+
+
+							<input type="email" placeholder="Your email" required="required">
+
+
+							<input type="submit" value="Send">
+
+
+						</form>
+
+
+					
+
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+	</section>
+
+
+	<div class="ak-footer__bottom">
+
+
+		<div class="container">
+
+
+			<div class="row">
+
+
+				<div class="col-12 col-lg-8 ak-footer__menu">
+
+
+					<nav>
+
+
+						<ul>
+
+
+							<li><a href="#">Home</a></li>
+
+
+							<li><a href="#">About us</a></li>
+
+
+							<li><a href="#">Services</a></li>
+
+
+							<li><a href="#">Portfolio</a></li>
+
+
+							<li><a href="#">Blog</a></li>
+
+
+							<li><a href="#">Contact us</a></li>
+
+
+						</ul>
+
+
+					</nav>
+
+
+				</div>
+
+
+				<div class="col-12 col-lg-4 text-right">
+
+
+					<p>Created by akhouad 2016. All Rights Reserved</p>
+
+
+					<ul class="ak-social">
+
+
+					<li><a href="#" class="ion-social-facebook"></a></li>
+
+
+					<li><a href="#" class="ion-social-twitter"></a></li>
+
+
+					<li><a href="#" class="ion-social-youtube"></a></li>
+
+
+					<li><a href="#" class="ion-social-linkedin"></a></li>
+
+
+					<li><a href="#" class="ion-social-pinterest"></a></li>
+
+
+					<li><a href="#" class="ion-social-instagram"></a></li>
+
+
+					
+
+
+				</ul>
+
+
+				</div>
+
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+		
+
+
+	</div>
+
+
+</footer>
+
+
+
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDirfFo6BjMidL7W4w_W90TDkCNEgRzAr8" async defer></script>
+
+
+	
+
+
+	<script src="js/script.js"></script>
+
+
+
+
+
+</body>
+
+
+</html>

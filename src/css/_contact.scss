@@ -1,0 +1,64 @@
+
+.ak-contact {
+
+	&__form {
+		margin-bottom: 95px;
+
+		input, textarea {
+			display: block;
+			width: 100%;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 12px;
+			font-weight: 700;
+			color: #ccc;
+			text-transform: uppercase;
+			height: 50px;
+			line-height: 48px;
+			border: 1px solid transparent;
+			padding-left: 20px;
+			background-color: #fefcf9;
+			margin-bottom: 30px;
+
+			&:focus {
+				border: 1px solid $color_green;
+			}
+		}
+
+		textarea {
+			resize: none;
+			min-height: 200px;
+		}
+
+		.ak-button {
+			min-width: 165px;
+			text-align: center;
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 30px;
+		font-weight: 400;
+		color: $color-light;
+		margin: 25px 0;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	
+}
+
+#ak_map {
+	height: 100%;
+
+	@include media-breakpoint-down(sm) {
+			height: 500px;
+		}
+}

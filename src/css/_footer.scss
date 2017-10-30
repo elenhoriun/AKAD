@@ -1,0 +1,133 @@
+.ak-footer {
+	margin-top: 150px;
+	
+	&__top {
+		background-color: $color_green;
+		
+		&-title {
+			font-size: 30px;
+    		line-height: 48px;
+    		margin: 45px 0 25px;
+    		color: #fff;
+
+		}
+
+		.ak-button {
+			min-width: 165px;
+			text-align: center;
+		}
+	}
+
+	&__form {
+		margin: 45px 0 25px;
+		background-color: #fff;
+		padding: 20px 25px 20px 20px;
+
+		&-title {
+		    text-transform: uppercase;
+        	font-size: 24px;
+    		line-height: 36px;
+    		color: $color_main;
+    		padding-right: 20%;
+    		padding-bottom: 15px;
+		}
+
+		&-info {
+			color: $color-light;
+			padding-bottom: 30px;
+    	}
+
+    	&-container {
+    		
+    		font-size: 0;
+    		margin: 0px auto;
+    		
+
+    		input {
+    			display: inline-block;
+    			font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				text-transform: uppercase;
+				height: 50px;
+				line-height: 48px;
+				
+    		}
+
+    		input[type=email] {
+    			width: calc(100% - 135px);
+				font-size: 12px;
+				color: #ccc;
+				border: 1px solid #e5e5e5;
+				vertical-align: middle;
+				padding-left: 20px;
+				
+				&:focus {
+				border: 1px solid $color_green;
+				}
+    		}
+
+    		input[type=submit] {
+    			background-color: $color_green;
+    			color: #fff;
+    			font-size: 14px;
+    			border: 1px solid transparent;
+    			vertical-align: middle;
+    			width: 135px;
+    			cursor: pointer;
+
+    			&:hover {
+    				background-color: #fff;
+					color: $color-green;
+					border: 1px solid $color_green;
+    			}
+    		}
+    	}
+	}
+
+	&__bottom {
+		padding-top: 50px;
+		padding-bottom: 90px;
+
+		p {
+			font-size: 14px;
+			color: #9a9a9a;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+
+		.ak-social {
+			text-align: right;
+		}
+	}
+
+
+	&__menu {
+
+		padding-bottom: 30px;
+		
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			float: left;
+			padding-right: 35px;
+		}
+
+		a {
+			font-size: 14px;
+			color: #9a9a9a;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			&:hover {
+				color: $color_green;
+			}
+		}
+
+	}
+}
