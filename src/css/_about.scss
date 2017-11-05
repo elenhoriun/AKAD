@@ -54,6 +54,9 @@
 
 .ak-clients {
 
+	&__photo {
+		margin: 0 auto;
+	}
 
 	&__logo {
 		overflow: hidden;
@@ -62,6 +65,7 @@
 		margin-bottom: 10px;
 		width: 100%;
 		height: auto;
+		
 		}
 	}
 

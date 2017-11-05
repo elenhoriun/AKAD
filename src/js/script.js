@@ -2,18 +2,28 @@
 
 // to inlude plugins add "=" sign below
 // require bootstrap.min.js
-// require slick.min.js 
+//=require slick.min.js 
 
 // require popper.min.js
 
-
+//=require lightbox.min.js
 //=require util.js
-//=require tab.js
+//=require tab.js 
 //=require isotope.pkgd.min.js
 
 ;(function($){
 
 	$(document).ready(function(){
+		$('.ak-slider').slick({
+		      
+		      dots: true,
+		      arrows: false,
+		      autoplay: true,
+		      autoplaySpeed: 4000
+		    });
+
+		console.log('test');
+
 		var $grid; 
 
 		$grid = $('.ak-portfolio__items').isotope({
@@ -33,6 +43,17 @@
 
   			$('.ak-portfolio__filter a').removeClass('active');
   			$(this).addClass('active');
+
+  			// Toggle lightbox filter
+
+  			// $('ak-portfolio__item a').each(function(){
+  			// 	// console.log($(this).data('filter'));
+  			// 	if (filterValue == "*") {
+  			// 		$(this).data('lightbox', 'portfolio')
+  			// 	} else {
+  			// 		$(this).data('lightbox', $(this).data('filter'));
+  			// 	}
+  			// });
 		});
 
 		$('#mobile-menu-link').on('click', function(evt){
@@ -41,12 +62,7 @@
 			$('#mobile-menu').toggleClass('ak-menu--open');
 		});
 
-		$('.ak-slider').slick({
-			dots: true,
-			autoplay: true,
-			autoplaySpeed: 4000
-		});
-
+		
 				
 	});
 
