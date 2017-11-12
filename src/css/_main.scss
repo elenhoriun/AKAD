@@ -1,0 +1,296 @@
+.ba-about {
+		padding-top: 125px;
+		padding-bottom: 120px;
+		background-color: $color_bg;
+	
+	&__header {
+		background: #ccc9e4 url(../img/about-bg.jpg) top center no-repeat;
+		background-size: cover;
+		min-height: 555px;
+	}
+
+	&__info {
+		margin-top: 60px;
+
+		p {
+			font-size: 20px;
+			line-height: auto;
+			padding-bottom: 20px;
+			margin: 0;
+		}
+
+		a {
+			margin-top: 100px;
+		}
+	}
+}
+
+.ba-services {
+	background-color: $color_bg;
+
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 50px;
+	}
+
+	.col-12, .col-md-6, .col-md-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&__header {
+		background: #c2bfda url(../img/services-bg.jpg) top center no-repeat;
+		padding-top: 60px;
+		
+		&-title {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		&-quote {
+			color: #fff;
+			font-style: italic;
+			text-align: center;
+			padding: 60px 15px 0;
+		}
+	}
+
+	&__item {
+		min-height: 400px;
+		color: $color_text;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&--dark {
+			background-color: #dbdbdb;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		h3 {
+			font-size: 24px;
+			color: $color_text;
+			margin: 0;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			font-style: italic;
+			max-width: 200px;
+		}
+	}
+}
+
+.ba-works {
+	background: #c2bfda url(../img/works-bg.jpg) top center no-repeat;
+	padding-bottom: 60px;
+
+	&__slider {
+		margin: 30px 0;
+	}
+
+	.ba-button {
+		color: #fff;
+		border: 1px solid #fff;
+
+		&:hover {
+			color: $color_main;
+			background-color: #fff;
+		}
+	}
+}
+
+
+.ba-team {
+	background-color: $color_bg;
+	padding-bottom: 100px;
+
+	.ba-title {
+
+		&__name {
+			color: $color_text;
+		}
+	}
+}
+
+.ba-contact {
+	position: relative;
+	overflow: hidden;
+
+	&__form {
+		display: block;
+		margin: 0 auto;
+		margin-top: 250px;
+		max-width: 920px;
+		padding: 0 15px;
+		font-size: 0;
+		
+		input {
+			display: inline-block;
+			width: 49%;
+			height: 60px;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 18px;
+			font-style: italic;
+			color: #fff;
+			background-color: rgba(255,255,255,.6);
+			outline: none;
+			border: 1px solid transparent;
+			margin-bottom: 20px;
+			padding-left: 20px;
+
+			&:focus {
+				border: 1px solid $color_main;
+			}
+		}
+
+		input:first-child {
+			margin-right: 2%;
+		}
+
+		input[placeholder] {
+			font-family: 'PT Sans', sans-serif;
+			font-size: 18px;
+			font-style: italic;
+			color: #fff;
+		}
+
+		textarea {
+			width: 100%;
+			height: 200px;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 18px;
+			font-style: italic;
+			color: #fff;
+			background-color: rgba(255,255,255,.6);
+			outline: none;
+			border: 1px solid transparent;
+			padding-left: 20px;
+			padding-top: 20px;
+
+			&:focus {
+				border: 1px solid $color_main;
+			}
+		}
+	}
+
+	button {
+			width: 295px;
+			height: 70px;
+			border-radius: 3px;
+			background-color: $color_main;
+			color: #fff;
+			font-family: 'ProximaNova', sans-serif;
+			font-size: 20px;
+			text-transform: uppercase;
+			margin-top: 60px;
+			border: 1px solid transparent;
+			outline: none;
+
+
+			&:focus {
+				border: 1px solid #fff;
+			}
+		
+		}
+
+	&__item {
+		position: absolute;
+		max-width: 350px;
+		height: 80px;
+		right: -260px;
+		font-size: 0;
+		transition: .4s;
+
+		&:hover {
+			right: 0;
+		}
+	}
+
+	&__adress {
+		top: 240px;
+			
+	}
+
+	&__phone {
+		top: 320px;
+	}
+
+	&__icon {
+		display: inline-block;
+		width: 90px;
+		height: 100%;
+		background-color: $color_main;
+		vertical-align: middle;
+
+		img {
+			vertical-align: middle;
+			width: auto;
+			height: 40px;
+			margin-top: 20px;
+		}
+
+
+	}
+
+	&__text {
+		width: 260px;
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		background-color: rgba(255,255,255,0.6);
+		text-align: center;
+		font-size: 18px;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+
+
+.ba-map {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+
+	&__info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(159,154,207,.6);
+		z-index: 9999;
+	}
+
+	&__link {
+		display: block;
+		margin: 10px 0 10px 30px;
+		font-size: 25px;
+		color: #000;
+	}
+}
+
+#ba_map {
+	height: 100%;
+}
+
+.ba-footer {
+	min-height: 180px;
+	background-color: $color_main;
+	padding: 55px 0;
+
+	p {
+		color: #fff;
+		margin: 0;
+		}
+	
+}

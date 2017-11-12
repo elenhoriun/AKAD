@@ -1,6 +1,6 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/slick-carousel/slick/slick.scss";
-@import url('lightbox.min.css');
+// @import url('lightbox.min.css');
 
 
 @import "variables.scss";
@@ -8,10 +8,6 @@
 @import "layout.scss";
 @import "common.scss";
 @import "header.scss";
-@import "homepage.scss";
-@import "about.scss";
-@import "contact.scss";
 @import "footer.scss";
-@import "services.scss";
-@import "blog.scss";
-@import "components.scss"
+@import "main.scss"
+

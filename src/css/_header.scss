@@ -1,114 +1,75 @@
-.ak-header {
+.ba-header {
 
-	background: #fff url(../img/header-bg.jpg) top center no-repeat;
+	background: #bcb5d1 url(../img/header-bg.jpg) top center no-repeat;
 	background-size: cover;
-	margin-bottom: 100px;
-
-	&--page {
-		min-height: 500px;
-		background: #fff url(../img/bg-page.jpg) top center no-repeat;
-		background-size: cover;
-	}
-
-	&__middle {
-		min-height: 400px;
-	}
-
+	min-height: 100vh;
+	
 	&__top {
-		height: 100px;
-	}
-
-	&__main {
-		padding-top: 125px;
-		padding-bottom: 125px;
-	}
-
-	&__title {
-		text-transform: uppercase;
-		font-weight: 700;
-
-		span {
-			background-color: $color_green;
-			display: inline-block;
-			font-size: 18px;
-			line-height: 30px;
-			height: 30px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-
-		h1 {
-			border: 10px solid $color_main;
-			padding: 20px 15px;
-			margin-bottom: 30px;
-
-			@include media-breakpoint-up(lg) {
-     			padding: 20px 35px;
-   			}
-   		}
-	}
-
-	&__info {
-		padding-top: 25px;
-		padding-bottom: 80px;
-		position: relative;
-
-		.ak-button {
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			transform: translateY(50%);
-		}
-	}
-
-	&__image {
-		position: relative;
+		padding-top: 35px;
 		
-		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: auto;
+	}
+	
+	&__logo {
+		fill: #fff;
+
+		&:hover {
+			fill: $color_main;
 		}
 	}
+
 
 	&__menu {
-		z-index: 9999999;
-		position: relative;
-	}
-
-}
-
-.ak-menu {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: -340px;
-	width: 320px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(0,0,0,.5);
-	z-index: 999999;
-	transition: transform ease-in .4s;
-
-	&--open {
-		transform: translateX(-340px);
-	}
-
-
-	&__items {
 		list-style: none;
 		padding-left: 0;
+		margin-bottom: 0;
 
 		li {
-			text-transform: uppercase;
+			display: inline-block;
+			padding-left: 30px;
+
+			&:first-child {
+				padding-left: 0;
+			}
 
 			a {
+				text-decoration: none;
 				color: #fff;
-				line-height: 40px;
+				font-family: 'ProximaNova', sans-serif;
+				font-size: 24px;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $color_main;
+					text-decoration: underline;
+				}
 			}
 		}
 	}
+
+	&__title {
+		min-height: calc(100vh - 114px);
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-size: 72px;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 30px;
+			line-height: auto;
+			font-style: italic;
+			font-weight: 400;
+			max-width: 670px;
+			text-align: center;
+		}
+	}
+	
+
 }
+
+

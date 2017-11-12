@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700,400|Open+Sans:400,800')
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/Proxima_bold.woff2') format('woff2'),
+         url('../fonts/Proxima_bold.woff') format('woff');
+                 
+    font-weight: 700;
+    font-style: normal;
 
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+// font-family: 'PT Sans', sans-serif;
+// font-family: 'ProximaNova', sans-serif;
